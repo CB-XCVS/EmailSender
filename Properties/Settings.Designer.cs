@@ -37,7 +37,7 @@ namespace EmailSender.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.DefaultSettingValueAttribute("*")]
         public string username {
             get {
                 return ((string)(this["username"]));
@@ -49,7 +49,7 @@ namespace EmailSender.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.DefaultSettingValueAttribute("*")]
         public string password {
             get {
                 return ((string)(this["password"]));
@@ -61,7 +61,7 @@ namespace EmailSender.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.DefaultSettingValueAttribute("*")]
         public string smtpSvr {
             get {
                 return ((string)(this["smtpSvr"]));

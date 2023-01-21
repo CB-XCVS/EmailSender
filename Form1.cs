@@ -143,11 +143,14 @@ namespace EmailSender
             Properties.Settings.Default.smtpSvr = smtpSvr.Text;
             Properties.Settings.Default.username = usrName.Text;
             StringCollection sc = new StringCollection();
-            foreach (var email in emails)
+            if (emails != null)
             {
-                sc.Add(email);
+                foreach (var email in emails)
+                {
+                    sc.Add(email);
+                }
+                Properties.Settings.Default.toList = sc;
             }
-            Properties.Settings.Default.toList = sc;
             Properties.Settings.Default.Save();
         }
     }
